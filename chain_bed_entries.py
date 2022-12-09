@@ -6,7 +6,7 @@ import sys
 def main():
     # parse arguments
     parser = argparse.ArgumentParser(
-        description='This script will output a bed file with the top NGXX entries')
+        description='This script will chain bed entries that are within a certain distance')
     parser.add_argument(
         '--bed', help='The name of the bed file', required=True)
     parser.add_argument(

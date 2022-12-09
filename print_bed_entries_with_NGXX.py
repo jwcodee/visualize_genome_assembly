@@ -6,7 +6,7 @@ import sys
 def main():
 
     parser = argparse.ArgumentParser(
-        description='This script will output a bed file with the top NGXX entries')
+        description='This script will output a bed file with bed entries from contigs that contribute to NGXX of the draft genome')
     parser.add_argument(
         '--bed', help='The name of the bed file', required=True)
     parser.add_argument(

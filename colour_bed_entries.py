@@ -7,7 +7,7 @@ def main():
 
     # parse arguments
     parser = argparse.ArgumentParser(
-        description='This script will output a bed file with the top NGXX entries')
+        description='This script will output a bed file with an additional colour column for each bed entry. The colours will rotate between light blue and dark blue.')
     parser.add_argument(
         '--bed', help='The name of the bed file', required=True)
 

@@ -7,7 +7,7 @@ def main():
 
     # parse arguments
     parser = argparse.ArgumentParser(
-        description='This script will output a bed file with the top NGXX entries')
+        description='This script will remove subsumed bed entries')
     parser.add_argument(
         '--bed', help='The name of the bed file', required=True)
     args = parser.parse_args()
