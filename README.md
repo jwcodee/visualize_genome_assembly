@@ -40,11 +40,11 @@ snakemake --cores N # N is the number of cores you want to run the script with
 
 Configurable parameters can be changed in the config.yaml:
 ```
-draft    path to draft genome assembly
-ref      path to reference assembly
-threads  numbers of threads for minimap2 to use to map the draft assembly to reference genome
-ng       NGXX value to select contigs to plot on ideogram
-dist     dist between bed entries to chain
+draft    path to draft genome assembly # required
+ref      path to reference assembly # required
+threads  numbers of threads for minimap2 to use to map the draft assembly to reference genome # default: 48
+ng       NGXX value to select contigs to plot on ideogram # default: 95
+dist     dist between bed entries to chain # default 50000
 ```
 
 
