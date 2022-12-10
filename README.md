@@ -1,4 +1,5 @@
 # Visualize Genome Assembly Using Ideograms
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jowong4/visualize_genome_assembly)
 
 ## Author
 Johnathan Wong
