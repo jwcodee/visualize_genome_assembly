@@ -44,7 +44,7 @@ draft    path to draft genome assembly # required
 ref      path to reference assembly # required
 threads  numbers of threads for minimap2 to use to map the draft assembly to reference genome # default: 48
 ng       NGXX value to select contigs to plot on ideogram # default: 95
-dist     dist between bed entries to chain # default 50000
+dist     dist between bed entries to chain # default: 50000
 ```
 
 
