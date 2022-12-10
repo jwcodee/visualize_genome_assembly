@@ -17,8 +17,11 @@ real    0m42.227s
 user    3m38.213s
 sys     0m13.887s
 ```
-If you want to download the test data you can download them, following the instructions [here](# Testing Installation). You will have to change the draft and ref parameters in the `config.yaml`.
-If you want to install the dependencies yourself, you can following the instructions [here](# Installing dependencies using conda:)
+I changed the file permissions of the input files and my enviroment so the commands should should work. If it doesn't you can follow the instructins below:
+
+To download the test data, you can follow the instructions [here](#testing-installation). You will have to change the draft and ref parameters in the `config.yaml`.
+
+To install the dependencies, you can follow the instructions [here](#installing-dependencies-using-conda)
 
 The ideogram should look like this:
 ![Example ideogram.](imgs/draft_to_ref.NG95.chained.subsumed.coloured.png)
@@ -82,7 +85,7 @@ GoldRush has been tested on *Linux* operating systems (centOS7, ubuntu-20.04)
  * [biomaRt](https://bioconductor.org/packages/release/bioc/html/biomaRt.html)
  * [snakemake](https://snakemake.readthedocs.io/en/stable/)
  
-### Installing dependencies using conda:
+### Installing dependencies using conda
 ```
 conda env create -f environment.yaml # environment.yaml can be found in the top dir of this repository. Using the environment.yaml will also ensure maximum reproducibility between users
 ```
