@@ -37,7 +37,7 @@ rule bam_to_bed:
 rule extract_NGXX_entries_from_bed:
     input:
         bed = expand("{draft}_to_{ref}.bed", draft=draft, ref=ref),
-        ref = expand("{ref}.renamed.fa", ref=remove_extension(config["ref"])),
+        ref = expand("{ref}.renamed.fa", ref=ref),
         draft = config["draft"]
     output:
         expand("{draft}_to_{ref}.NG{ng}.bed", draft=draft, ref=ref, ng=config["ng"])
