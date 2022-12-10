@@ -27,7 +27,7 @@ The ideogram should look like this:
 ![Example ideogram.](imgs/draft_to_ref.NG95.chained.subsumed.coloured.png)
 
 ## Description
-Frequently, computational biologists would like to visualize the contiguity of the draft genome assembly after genome assembly. One way to do so is through the use of an ideogram using packages like chromPlot[[1]](#1). The process going from draft genome assembly to visualization is not often straightforward and this workflow streamlines the process, making it simple for computational biologists who have no experience to visualize their genome assembly.
+Frequently, computational biologists would like to visualize the contiguity of the draft genome assembly after genome assembly. One way to do so is through the use of an ideogram using packages like chromPlot[[1]](#1). The process going from draft genome assembly to visualization is not often straightforward and requires lots of processing. This workflow streamlines the process and requires only the draft genome assembly and reference genome as input, making it simple for computational biologists, who have no experience, to visualize their genome assembly.
 
 ### Workflow
 
@@ -37,7 +37,7 @@ The workflow contains 8 steps:
 2. Map the draft assembly to the reference and output a bam file using minimap2[[2]](#2) and samtools[[3]](#3).
 3. The bam file is converted to bed file using bedtools[[4]](#4).
 4. The bed entries belonging to the top NG`ng` contigs will be selected. (For large genomes, plotting all bed entries can be exceedingly slow).
-5. The bed entries are then chained together if they are within some `dist` distances.
+5. The bed entries with the same ID are then chained together if they are within some `dist` distances.
 6. Bed entries that are subsumed in other bed entries are removed.
 7. The bed entries are coloured. The colours will rotate between light blue and dark blue
 8. The ideogram is generating using chromPlot[[1]](#1) with the processed bed file as input
