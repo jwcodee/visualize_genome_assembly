@@ -13,7 +13,7 @@ ref=remove_path(remove_extension(config["ref"]))
 
 rule all:
     input:
-        expand("{draft}_to_{ref}.NG{ng}.chained.subsumed.coloured.png", draft=draft, ref=ref, ng=config["ng"])
+        expand("{draft}_to_{ref}.NG{ng}.chained.subsumed.coloured.ideogram.png", draft=draft, ref=ref, ng=config["ng"])
 
 rule map_assembly_to_reference:
     input: 
@@ -76,7 +76,7 @@ rule plot_ideogram:
     input: 
         expand("{draft}_to_{ref}.NG{ng}.chained.subsumed.coloured.bed", draft=draft, ref=ref, ng=config["ng"])
     output: 
-        expand("{draft}_to_{ref}.NG{ng}.chained.subsumed.coloured.png", draft=draft, ref=ref, ng=config["ng"])
+        expand("{draft}_to_{ref}.NG{ng}.chained.subsumed.coloured.ideogram.png", draft=draft, ref=ref, ng=config["ng"])
     shell:
         "Rscript plot_ideogram.r {input} {output}"
 
