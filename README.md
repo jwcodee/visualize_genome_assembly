@@ -21,7 +21,7 @@ I changed the file permissions of the input files and my enviroment so the comma
 
 To download the test data, you can follow the instructions [here](#testing-installation). You will have to change the draft and ref parameters in the `config.yaml`.
 
-To install the dependencies, you can follow the instructions [here](#installing-dependencies-using-conda)
+To install the dependencies, you can follow the instructions [here](#installing-dependencies-using-conda).
 
 The ideogram should look like this:
 ![Example ideogram.](imgs/draft_to_ref.NG95.chained.subsumed.coloured.png)
@@ -39,8 +39,8 @@ The workflow contains 8 steps:
 4. The bed entries belonging to the top NG`ng` contigs will be selected. (For large genomes, plotting all bed entries can be exceedingly slow).
 5. The bed entries with the same ID are then chained together if they are within some `dist` distances.
 6. Bed entries that are subsumed in other bed entries are removed.
-7. The bed entries are coloured. The colours will rotate between light blue and dark blue
-8. The ideogram is generating using chromPlot[[1]](#1) with the processed bed file as input
+7. The bed entries are coloured. The colours will rotate between light blue and dark blue.
+8. The ideogram is generating using chromPlot[[1]](#1) with the processed bed file as input.
 
 
 ### Visualization of the workflow:
@@ -55,7 +55,7 @@ The file will be named as `draft_to_ref.NG95.chained.subsumed.coloured.ideogram.
 
 ### Usage
 
-After setting up your config file, simply run
+After setting up your config file, simply run:
 ```
 snakemake --cores N # N is the number of cores you want to run the script with
 ```
