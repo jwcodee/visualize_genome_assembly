@@ -28,6 +28,8 @@ The workflow contains 8 steps:
 
 The grey bands on the ideogram represents parts of the genome no contigs maps to. The rotating blue colour bands represent the contigs that map the reference genome. Each single colour band represents one contig.
 
+The file will be named as `draft_to_ref.NG95.chained.subsumed.coloured.ideogram.png` if the draft genome assembly is called `draft.fa`, reference genome is called `ref.fa`, and NG`95` contigs were selected.
+
 ### Usage
 
 After setting up your config file, simply run
