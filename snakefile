@@ -17,7 +17,7 @@ rule all:
 
 rule map_assembly_to_reference:
     input: 
-        ref = expand("{ref}.renamed.fa", ref=remove_extension(config["ref"])),
+        ref = expand("{ref}.renamed.fa", ref=ref),
         draft = config["draft"]
     output: 
         expand("{draft}_to_{ref}.bam", draft=draft, ref=ref)
