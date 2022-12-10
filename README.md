@@ -9,6 +9,7 @@ To test the snakemake workflow with the least amount of set up, you can do the f
 ```
 git clone https://github.com/jowong4/visualize_genome_assembly.git
 conda activate /home/jupyter-johnathanwong4/.conda/envs/visualize_genome_assembly_with_ideogram
+cd visualize_genome_assembly
 snakemake --cores 48
 ```
 The snakemake command was benchmarked using `time` on the shared server and it took this much time.
