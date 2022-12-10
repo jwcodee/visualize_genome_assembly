@@ -4,6 +4,25 @@
 ## Author
 Johnathan Wong
 
+## For Ishika and Will
+To test the snakemake workflow with the least amount of set up, you can do the following:
+```
+git clone https://github.com/jowong4/visualize_genome_assembly.git
+conda activate /home/jupyter-johnathanwong4/.conda/envs/visualize_genome_assembly_with_ideogram
+snakemake --cores 48
+```
+The snakemake command was benchmarked using `time` on the shared server and it took this much time.
+```
+real    0m42.227s
+user    3m38.213s
+sys     0m13.887s
+```
+If you want to download the test data you can download them, following the instructions [here](# Testing Installation). You will have to change the draft and ref parameters in the `config.yaml`.
+If you want to install the dependencies yourself, you can following the instructions [here](# Installing dependencies using conda:)
+
+The ideogram should look like this:
+![Example ideogram.](imgs/draft_to_ref.NG95.chained.subsumed.coloured.png)
+
 ## Description
 Frequently, computational biologists would like to visualize the contiguity of the draft genome assembly after genome assembly. One way to do so is through the use of an ideogram using packages like chromPlot[[1]](#1). The process going from draft genome assembly to visualization is not often straightforward and this workflow streamlines the process, making it simple for computational biologists who have no experience to visualize their genome assembly.
 
