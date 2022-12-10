@@ -1,11 +1,11 @@
-# Visualize Genome Assembly Using Ideograms
+# Visualize Genome Assembly Using Ideogram
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jowong4/visualize_genome_assembly)
 
 ## Author
 Johnathan Wong
 
 ## Description
-Frequently, computational biologists would like to visualize the contiguity of the draft genome assembly after genome assembly. One way to do so is through the use of ideograms using packages like chromPlot[[1]](#1). The process going from draft genome assembly to visualization is not often straightforward and this workflow streamlines the process, making it simple for computational biologists who have no experience to visualize their genome assembly.
+Frequently, computational biologists would like to visualize the contiguity of the draft genome assembly after genome assembly. One way to do so is through the use of an ideogram using packages like chromPlot[[1]](#1). The process going from draft genome assembly to visualization is not often straightforward and this workflow streamlines the process, making it simple for computational biologists who have no experience to visualize their genome assembly.
 
 ### Workflow
 
