@@ -1,4 +1,4 @@
-# Visualize Genome Assembly
+# Visualize Genome Assembly Using Ideograms
 
 ## Author
 Johnathan Wong
